@@ -1,0 +1,17 @@
+function drawTriangle(symbol, height) {
+    let result = "";
+
+    if (height >= 1 && height < 3) {
+        for (let i = 0; i < 3; i++) {
+            result += symbol;
+            console.log(result);
+        }
+    } else {
+        for (let i = 0; result.length < height; i++) {
+            result += symbol;
+            console.log(result);
+        }
+    }
+
+}
+drawTriangle('$',6);
