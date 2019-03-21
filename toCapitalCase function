@@ -1,0 +1,9 @@
+function toCapitalCase (string) {
+    let stringArray=string.split(' ');
+    let capitalCaseArray = stringArray.map(function(el) {
+        return el.charAt(0).toUpperCase() + el.substring(1);
+    });
+    let result = capitalCaseArray.join(' ');
+    console.log(result);
+};
+toCapitalCase('Господи помоги мне выучиться');
